@@ -23,7 +23,7 @@
       <!-- SELECTORS -->
       <section id="selectors" class=" px-2 py-5">
         <div class="container">
-          <h2 class="display-5 text-center border-bottom border-1 border-black">SELECTORS</h2>
+          <h2 class="display-5 text-center border-bottom border-1 border-black" id="main-selector">SELECTORS</h2>
           <strong>Single Selector</strong>
           <div id="basic-selector" class="mb-3">
             <p>Return this text using tags</p>
@@ -59,7 +59,8 @@
               <input type="text" name="fixname" id="fix-name" class="form-control bg-secondary-subtle border border-1 border-black">
             </div>
             <div class="col-4">
-              <input type="submit" value="Assign fix value" class="btn btn-success" id="btn-add-fix-name">
+              <!-- onclick="clickBtn()" -->
+              <input type="submit" value="Assign fix value" class="btn btn-success" id="btn-add-fix-name"> 
             </div>            
           </div>
           
@@ -97,21 +98,21 @@
             <div class="row justify-content-center">
               <!-- SUCCESS -->
               <div class="col-3">
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#successModal" >
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#successModal" id="success-modal">
                   Success Modal
                 </button>
               </div>
 
               <!-- WARNING -->
               <div class="col-3">
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warningModal" >
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warningModal" id="warning-modal">
                   Warning Modal
                 </button>
               </div>
 
               <!-- SWITCH -->
               <div class="col-3">
-                <button type="button" class="btn btn-danger" >
+                <button type="button" class="btn btn-danger" id="switch-btn">
                   Switch Modal
                 </button>
               </div>
